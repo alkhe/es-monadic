@@ -31,9 +31,10 @@ let finalPromise = (async () => {
 
 __Promise (ES6)__
 ```js
-let finalPromise = Promise.all(promiseA, promiseB)
-	.then((a, b) => {
+let finalPromise = promiseA.then(a =>
+	promiseB.then(b => {
 		let c = f(a, b);
 		return g(a, b, c);
-	});
+	})
+);
 ```
