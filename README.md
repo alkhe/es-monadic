@@ -1,11 +1,16 @@
 # es-monadic
 Monadic Assignment for Javascript Promises.
 
+- [Syntax](#syntax)
+- [Discussion](#discussion)
+
 - utilizes the __do-notation__ [strawman proposal](http://wiki.ecmascript.org/doku.php?id=strawman:do_expressions)
 - introduces a cleaner and more readable syntax for asynchronous control flow
 - inspired by controversy arising from [this tweet](https://twitter.com/izs/status/694321665430261760)
 - further reading: https://en.wikibooks.org/wiki/Haskell/do_notation
 - similar to async/await syntax
+
+## Syntax
 
 __Monadic Assignment__
 ```js
@@ -38,3 +43,8 @@ let finalPromise = promiseA.then(a =>
 	})
 );
 ```
+
+## Discussion
+- `do` notation should be explicit in whether it is asynchronous (like an async function).
+	- `let p = async do { ... }`
+	- `let p = do* { ... }`
