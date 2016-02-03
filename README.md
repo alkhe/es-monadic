@@ -1,9 +1,12 @@
 # es-monadic
 Monadic Assignment for Javascript Promises.
 
-- [Syntax](#syntax)
-- [Discussion](#discussion)
+## Table of Contents
+* [Notes](#notes)
+* [Syntax](#syntax)
+* [Discussion](#discussion)
 
+## Notes
 - utilizes the __do-notation__ [strawman proposal](http://wiki.ecmascript.org/doku.php?id=strawman:do_expressions)
 - introduces a cleaner and more readable syntax for asynchronous control flow
 - inspired by controversy arising from [this tweet](https://twitter.com/izs/status/694321665430261760)
