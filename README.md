@@ -1,17 +1,13 @@
 # es-monadic
 Monadic Assignment for Javascript Promises.
 
-Utilizes the __do-notation__ [strawman proposal](http://wiki.ecmascript.org/doku.php?id=strawman:do_expressions).
+- utilizes the __do-notation__ [strawman proposal](http://wiki.ecmascript.org/doku.php?id=strawman:do_expressions)
+- introduces a cleaner and more readable syntax for asynchronous control flow
+- inspired by [this tweet](https://twitter.com/izs/status/694321665430261760)
+- further reading: https://en.wikibooks.org/wiki/Haskell/do_notation
+- similar to async/await syntax
 
-Introduces a cleaner and more readable syntax for asynchronous control flow.
-
-Inspired by [this tweet](https://twitter.com/izs/status/694321665430261760).
-
-Further Reading: https://en.wikibooks.org/wiki/Haskell/do_notation
-
-Similar to async/await syntax.
-
-Monadic Assignment
+__Monadic Assignment__
 ```js
 let finalPromise = do {
 	let a <- promiseA;
@@ -23,7 +19,7 @@ let finalPromise = do {
 // if an error (e) is thrown, finalPromise will reject with (e)
 ```
 
-async/await (esnext)
+__async/await (esnext)__
 ```js
 let finalPromise = (async () => {
 	let a = await promiseA;
@@ -33,7 +29,7 @@ let finalPromise = (async () => {
 })();
 ```
 
-Promise (ES6)
+__Promise (ES6)__
 ```js
 let finalPromise = Promise.all(promiseA, promiseB)
 	.then((a, b) => {
