@@ -3,7 +3,7 @@ Monadic Assignment for Javascript Promises.
 
 - utilizes the __do-notation__ [strawman proposal](http://wiki.ecmascript.org/doku.php?id=strawman:do_expressions)
 - introduces a cleaner and more readable syntax for asynchronous control flow
-- inspired by [this tweet](https://twitter.com/izs/status/694321665430261760)
+- inspired by controversy arising from [this tweet](https://twitter.com/izs/status/694321665430261760)
 - further reading: https://en.wikibooks.org/wiki/Haskell/do_notation
 - similar to async/await syntax
 
