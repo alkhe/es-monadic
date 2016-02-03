@@ -27,7 +27,7 @@ let finalPromise = do {
 // if an error (e) is thrown, finalPromise will reject with (e)
 ```
 
-__async/await (esnext)__
+__async/await (ES Stage 3)__
 ```js
 let finalPromise = (async () => {
 	let a = await promiseA;
